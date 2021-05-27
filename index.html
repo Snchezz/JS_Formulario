@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Listado de Personas
+    </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre</label><label class="validation-error hide" id="fullNameValidationError">Esto campo es obligatorio</label>
+                        <input type="text" name="Nombre" id="Nombre">
+                    </div>
+                    <div>
+                        <label>Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Añadir">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="nombreApellido">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Opciones</th>
+                        </tr>
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Torres</td>
+                            <td>No editable</td>
+                        </tr>
+                        <tr>
+                            <td>Andrés</td>
+                            <td>Sánchez</td>
+                            <td>No editable</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
